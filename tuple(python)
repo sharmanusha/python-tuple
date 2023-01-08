@@ -1,0 +1,44 @@
+#tuple
+n1 = (1,"a",True,2,"b",False)
+print(n1)
+print(n1[0])
+print(n1[3])
+print(n1[-1])
+print(n1[5])
+print(n1[2:6])
+
+#tuple basic operations:
+n1 = (1,"a",True,2,"b",False)
+print(len(n1))
+tup1 = ("a",True,3+5j)
+tup2 = ("b",False,7+9j)
+print(tup1+tup2) #concatenation
+print(tup2+tup1)
+print(n1*2) #repetation
+print(tup1*3+tup2*3) #repetation with concantenation
+
+#tuple functions
+n=(1,2,3,4,5)
+m=(7,8,9,5,6)
+print(min(n))
+print(max(n))
+print(min(m))
+print(max(m))
+
+------------------------------------------------------------------------------------------------------
+output:
+(1, 'a', True, 2, 'b', False)
+1
+2
+False
+False
+(True, 2, 'b', False)
+6
+('a', True, (3+5j), 'b', False, (7+9j))
+('b', False, (7+9j), 'a', True, (3+5j))
+(1, 'a', True, 2, 'b', False, 1, 'a', True, 2, 'b', False)
+('a', True, (3+5j), 'a', True, (3+5j), 'a', True, (3+5j), 'b', False, (7+9j), 'b', False, (7+9j), 'b', False, (7+9j))
+1
+5
+5
+9
